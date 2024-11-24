@@ -21,7 +21,7 @@ const Page = () => {
   }, []);
 
   const getInvoices = async () => {
-    const res = await axios.get("http://localhost:3000/api/invoice");
+    const res = await axios.get("https://invoice-management-system-g91sw36rc-parthmandhares-projects.vercel.app/api/invoice");
     const data = await res.data;
 
     setInvoices(data.data);
@@ -51,7 +51,7 @@ const Page = () => {
     // Perform further actions like API call, etc.
 
     try {
-        const response = await axios.post("/api/invoice", newInvoice);
+        const response = await axios.post("https://invoice-management-system-g91sw36rc-parthmandhares-projects.vercel.app/api/invoice", newInvoice);
 
         getInvoices()
         setModalOpen(false);
@@ -85,7 +85,7 @@ const Page = () => {
         Object.entries(filters).filter(([_, value]) => value) // Remove empty filters
       ).toString();
 
-      const response = await axios.get(`http://localhost:3000/api/invoice?${queryParams}`);
+      const response = await axios.get(`https://invoice-management-system-g91sw36rc-parthmandhares-projects.vercel.app/api/invoice?${queryParams}`);
       const data = await response.data;
 
       

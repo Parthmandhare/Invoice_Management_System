@@ -12,7 +12,7 @@ const Table = ({ data, func }) => {
 
     const handleDelete = async (id) => {
         try {
-            const res = await axios.delete(`http://localhost:3000/api/invoice?id=${id}`);
+            const res = await axios.delete(`https://invoice-management-system-g91sw36rc-parthmandhares-projects.vercel.app/api/invoice?id=${id}`);
 
             func();
         } catch (error) {
