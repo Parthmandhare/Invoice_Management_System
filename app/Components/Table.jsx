@@ -7,7 +7,6 @@ const Table = ({ data, func }) => {
     const [paginatedData, setPaginatedData] = useState([]);
 
     useEffect(() => {
-
         setPaginatedData(getCurrentPageData(currentPage, data));
     }, [data, currentPage]);
 

@@ -5,7 +5,7 @@ import Table from "../Components/Table";
 import InvoiceNav from "../Components/InvoiceNav";
 import axios from "axios";
 
-const page = () => {
+const Page = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const [invoices, setInvoices] = useState(null);
@@ -357,4 +357,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

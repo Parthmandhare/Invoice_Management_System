@@ -1,6 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-// import logo from "../assests/"
 import { useRouter } from 'next/navigation'
 
 const Navbar = () => {
