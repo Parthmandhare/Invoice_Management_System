@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const db_url = "mongodb://localhost:27017/Invoice-Managment-System";
+const db_url = "mongodb+srv://parthmandhare12:eAq2rMh0bnf4lF9p@cluster0.sdgmj.mongodb.net/invoices?retryWrites=true&w=majority&appName=Cluster0";
 
 // Create a function to connect to the database
 const connectDB = async () => {
